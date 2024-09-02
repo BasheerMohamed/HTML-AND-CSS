@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 0, 0, 0.822);
+    display: grid;
+    place-content: center;
+}
+
+.box {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    background-color: aqua;
+    z-index: 1;
+}
+
+.box::before {
+    position: absolute;
+    content: '';
+    background-color: antiquewhite;
+    width: 200px;
+    height: 200px;
+    top: -100px;
+    left: -100px;
+    z-index: -1;
+}
+
+/* .child {
+    background-color: antiquewhite;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    border-radius: 50%;
+    z-index: 1;
+} */

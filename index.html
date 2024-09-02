@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Register</h1>
+        <form class="form">
+            <input type="text" placeholder="Enter ur Name" id="name" required maxlength="20">
+            <span id="error"></span>
+            <input type="email" placeholder="Email ID" id="email" required>
+            <input type="number" placeholder="Enter Mobile Number" id="mobile">
+            <!-- <label for="" class="gen">Gender :</label>
+            <input type="radio" value="male" name="gender" id="rad">
+            <label for="male" class="gen">Male</label>
+            <input type="radio" value="female" name="gender" id="rad">
+            <label for="female" class="gen">Female</label><br><br> -->
+            <input type="password" placeholder="Password" id="pass" required minlength="8" maxlength="20">
+            <input type="password" placeholder="Confirm Pasword" id="cp" required minlength="8" maxlength="20">
+            <div class="btns">
+                <button class="btn">Submit</button>
+            <button class="btn" onclick="clearForm()" type="submit">Clear</button>    
+            </div>
+            
+        </form>
+    </div>
+
+
+    <script src="/script.js"></script>
+</body>
+</html>
